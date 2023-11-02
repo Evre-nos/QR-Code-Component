@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+
+/* Color Variables */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scan-card {
+  height: 500px;
+  width: 325px;
+  background-color: var(--white);
+  border-radius: 15px;
+}
+
+.qr-portion {
+  height: 325px;
+  width: 325px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; This line was added to fix the issue */
+}
+
+.qr-image {
+  width: 90%;
+  height: 90%; /* Added height for consistency */
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.qr-info h1 {
+  font-size: 23px;
+  text-align: center;
+  color: var(--dark-blue);
+  margin: 0 28px;
+}
+
+.qr-info p {
+  margin: 20px 28px;
+  text-align: center;
+  color: var(--grayish-blue);
+}
